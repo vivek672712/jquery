@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function add(a, b) {
+        //     return a + b;
+        // }
+        // console.log(add(10, 20));
+        // console.log (add(30, 40,40,44));
+
+        // function sum(...args) {
+        //     let total = 0;
+        //     for (let i=0; i<args.length; i++) {
+        //         total += args[i];
+        //     }
+        //     console.log(args);
+        //     console.log(total);
+
+        // }
+        // sum(1, 2, 3, 4, 5,);
+
+
+
+        // function sum(...args){
+        // 	let result=0;
+        // 	for(let i=0;i<args.length;i++){
+        // 		result +=args[i];
+        // 	}
+        // 	console.log(args);
+        // 	console.log(result);
+        // }
+        // sum(1,2,3,4,5);
+
+        let set1 = new Set();
+        set1.add(1);
+        set1.add(2);
+        set1.add(3);
+        set1.add(4);
+        set1.add(5);
+        console.log(set1);
+        set1.add(30);
+        set1.add(39);
+        console.log(set1);
+
+        // Delete elements from the set
+        set1.delete(2);
+        set1.delete(30);
+
+        console.log(set1);
+
+
+        // Iterate over the set using forEach
+        let fruits = new Set();
+        fruits.add('apple');
+        fruits.add('banana');
+        fruits.add('orange');
+        fruits.add('mango');
+        console.log(fruits);
+
+        fruits.forEach((value) => {
+            console.log(value);
+        });
+
+
+
+    </script>
+</body>
+
+</html>

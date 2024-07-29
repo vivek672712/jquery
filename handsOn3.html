@@ -1,0 +1,35 @@
+ht<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands On</title>
+</head>
+<style>
+    .highlight {
+        background-color: rgb(76, 15, 243); /* Example highlight style */
+    }
+</style>
+<body>
+<div id="container">
+    <p class="paragraph">Rohit</p>
+    <p class="paragraph">Bhawana</p>
+    <p class="paragraph">Payal</p>
+    <p class="paragraph">Meenu</p>
+
+</div>
+<button id="highlight">Highlight</button>
+
+    <script>
+        function highlight() {
+            const para=document.querySelectorAll('.paragraph');
+         para.forEach(paragraph=>{
+             paragraph.classList.toggle('highlight')
+         });
+        }
+
+        document.getElementById('highlight').addEventListener('click',highlight)
+
+    </script>
+</body>
+</html>

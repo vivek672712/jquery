@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulations Basics</title>
+</head>
+<body>
+<h1> modifying Dom elements</h1>
+<input type="text" id="textinput" placeholder="enter text">
+<button id="changetext">change text</button>
+<p id ="Output"></p>
+
+<script>
+    document.getElementById('changetext').addEventListener('click', function(){
+        let inputtext = document.getElementById('textinput').value;
+        document.getElementById('Output').innerText = inputtext;
+        document.getElementById("Output").style.color="blue";
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hands On </title>
+</head>
+<body>
+<h1> creating and removing Dom elements</h1>
+<ul id="list">
+    <li>Rohit</li>
+    <li>Bhawana</li>
+    <li>payal</li>
+    <li>meenu</li>
+
+</ul>
+<button id="add">Add</button>
+<button id="remove">Remove</button>
+<script>
+document.getElementById('add').addEventListener('click', function(){
+    let li = document.createElement('li');
+    li.innerText = "new item";
+    document.getElementById('list').appendChild(li);
+})
+document.getElementById('remove').addEventListener('click', function(){
+    let li = document.getElementById('list');
+    if(li.children.length >0){
+        li.removeChild(li.lastElementChild);
+   
+}
+})
+
+</script>
+</body>
+</html>

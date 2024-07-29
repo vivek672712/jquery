@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+		let array1=[1,2,3];
+		let array2=[4,5,6];
+		let array3=['Kumkum Rajput'];
+		let array4=['Welcome', 'to', 'ADIT'];
+		let array5=[...array1,...array2,array3,...array4];
+		console.log(array5);
+ 
+		var array6=array1;
+		array6.push(9);
+		console.log(array6);
+ 
+		var array7=array4;
+		array7.push('Program');
+		console.log(array7);
+ 
+ 
+		console.log('<------------------->');
+		console.log('for...of loop');
+ 
+		var students=['Pooja', 'Neha','Priya','Nisha'];
+		for(var element  of students){
+			console.log(element);
+		}
+ 
+		console.log('<------------------->');
+		console.log('for...of loop with string');
+ 
+		var string='Hello World';
+		for(var x of string){
+			console.log(x);
+		}
+ 
+		console.log('<------------------->');
+		console.log('for...of loop with set');
+ 
+		let mySet=new Set("Hello");
+		for(let char of mySet){
+			console.log(char);
+		}
+		console.log('<------------------->');
+		console.log('for...of loop with map');
+		var map=new Map();
+		map.set('Name','Neha');
+		map.set('Age','27');
+		for(let[key,value] of map){
+			console.log(key +'-'+ value);
+		}
+ 
+ 
+	</script>
+ 
+</body>
+</html>

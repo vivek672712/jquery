@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulations Basics</title>
+</head>
+<body>
+<h1> DOM Manipulations Basics hands on practice</h1>
+<h2 id="heading"> Hello Students </h2>
+<button id="changetext">change text</button>
+
+<script>
+    document.getElementById('changetext').addEventListener('click', function(){
+        document.getElementById('heading').innerText = 'Hello Students! Welcome to our class';
+        document.getElementById("heading").style.color="blue";
+    })
+</script>
+    
+</body>
+</html>

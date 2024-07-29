@@ -1,0 +1,60 @@
+[4:17 PM] Deepika Singh
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ 
+</head>
+
+<body>
+
+	<h1>Hands on 13: Event Handling using jquery</h1>
+ 
+	<div id="box">
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+		tempor incididunt ut labore et dolore magna aliqua. </p>
+ 
+	</div>
+
+	<script>
+
+		$(document).ready(function(){
+
+			$('#box').click(function(){
+
+				$('#box').css('background-color','yellow');
+
+			});
+
+			$('#box').dblclick(function(){
+
+				$('#box').css('background-color','purple');
+
+			});
+
+			$('#box').contextmenu(function(){
+
+				$('#box').css('background-color','green');
+
+			});
+
+			$('#box').mouseenter(function(){
+
+				$('#box').css('background-color','blue');
+
+			});
+
+		})
+
+	</script>
+ 
+ 
+</body>
+
+</html>
+ 

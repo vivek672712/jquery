@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ 
+</head>
+
+<body>
+
+	<h1>Hands on 14: Use of jquery for DOM Manipulation</h1>
+ <p id="R">Rohit</p>
+<p id="p">Payal</p>
+<p><input type="text" name="" value="jquery DOM Manipulation" id="p1"></p>
+<button id="btn">text</button>
+<button id="btn1">html</button>
+<button id="btn2">value</button>
+<script>
+ 
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            alert($("#R").text());
+        });
+        $("#btn1").click(function(){
+            alert($("#p").html());
+        });
+        $("#btn2").click(function(){
+            alert($("#p1").val());
+        });
+
+        
+    });
+	</script>
+ 
+ 
+</body>
+
+</html>
+ 
